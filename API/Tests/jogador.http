@@ -1,0 +1,27 @@
+### Cadastrar Jogador
+POST http://localhost:5140/api/jogadores/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Bruno Henrique",
+    "numero" : "10",
+    "idTime" : 4
+}
+
+### Listar Jogadores
+GET http://localhost:5140/api/jogadores/listar
+
+### Atualizar Jogador
+PUT http://localhost:5140/api/jogadores/alterar/2
+Content-Type: application/json
+
+{
+    "nome": "Rafael Veiga",
+    "numero": "10",
+}
+
+### Deletar Jogador
+DELETE http://localhost:5140/api/jogadores/deletar/2
+
+### Listar jogador por time
+GET http://localhost:5140/api/jogadores/listar/1

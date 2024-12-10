@@ -1,0 +1,27 @@
+### Cadastrar Times
+POST http://localhost:5140/api/times/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Gremio",
+    "liga" : "Campeonato Brasileiro"
+}
+
+### Listar Times
+GET http://localhost:5140/api/times/listar
+
+### Buscar times
+GET http://localhost:5140/api/times/7
+
+
+### Atualizar Times
+PUT http://localhost:5140/api/times/alterar/4
+Content-Type: application/json
+
+{
+    "nome" : "Framengo",
+    "liga" : "Brasileirao"
+}
+
+### Deletar Times
+DELETE http://localhost:5140/api/times/deletar/4
